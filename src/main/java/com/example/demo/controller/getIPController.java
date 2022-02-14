@@ -19,4 +19,10 @@ public class getIPController {
         }
         return "Seu IP é " + xfHeader.split(",")[0];
     }
+
+    @GetMapping("/")
+    @ResponseStatus( HttpStatus.OK )
+    String read() {
+        return "Dino rodando";
+    }
 }
